@@ -12,6 +12,9 @@ module.exports = {
           600: "#319795",
           700: "#2C7A7B",
         },
+        orange: {
+          300: "#FBD38D",
+        },
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
