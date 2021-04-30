@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Stories</title>
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <header class="fixed top-0 inset-x-0 z-50">
+        <nav class="bg-teal-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="relative flex items-center justify-between h-16">
+                    <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-100 focus:outline-none"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                        <div class="hidden sm:block lg:hidden sm:ml-6 lg:ml-8">
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="text-gray-100 hover:text-white text-xs sm:text-sm font-medium py-2 px-2">Περιήγηση</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Logo and Menus Start -->
+                    <div class="flex-1 flex items-center justify-center lg:items-stretch lg:justify-start">
+                        <div class="flex-shrink-0 flex items-center lg:mr-0 mr-4">
+                            <img class="h-7 sm:h-9 w-auto" src="./assets/images/logo.svg" alt="Logo">
+                        </div>
+                        <div class="hidden lg:block sm:ml-6 lg:ml-8">
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="text-gray-100 hover:text-white text-xs sm:text-sm font-medium py-2 px-2">Περιήγηση</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Logo and Menus End -->
+
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
+                        <!-- Inbox Button -->
+                        <button class="p-1 text-gray-100 focus:outline-none ml-1 sm:ml-3 lg:ml-6">
+                            <svg class="sm:h-6 sm:w-6 h-5 w-5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 13V6C20 5.46957 19.7893 4.96086 19.4142 4.58579C19.0391 4.21071 18.5304 4 18 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V13M20 13V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V13M20 13H17.414C17.1488 13.0001 16.8945 13.1055 16.707 13.293L14.293 15.707C14.1055 15.8945 13.8512 15.9999 13.586 16H10.414C10.1488 15.9999 9.89449 15.8945 9.707 15.707L7.293 13.293C7.10551 13.1055 6.85119 13.0001 6.586 13H4"
+                                    stroke="#F3F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <!-- Notification Button -->
+                        <button class="p-1 text-gray-100 focus:outline-none ml-1 sm:ml-3 lg:ml-6">
+                            <svg class="sm:h-6 sm:w-6 h-5 w-5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 17H9M15 17H20L18.595 15.595C18.4063 15.4063 18.2567 15.1822 18.1546 14.9357C18.0525 14.6891 18 14.4249 18 14.158V11C18.0002 9.75894 17.6156 8.54834 16.8992 7.53489C16.1829 6.52144 15.17 5.75496 14 5.341V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3C11.4696 3 10.9609 3.21071 10.5858 3.58579C10.2107 3.96086 10 4.46957 10 5V5.341C7.67 6.165 6 8.388 6 11V14.159C6 14.697 5.786 15.214 5.405 15.595L4 17H9H15ZM15 17V18C15 18.7956 14.6839 19.5587 14.1213 20.1213C13.5587 20.6839 12.7956 21 12 21C11.2044 21 10.4413 20.6839 9.87868 20.1213C9.31607 19.5587 9 18.7956 9 18V17H15Z"
+                                    stroke="#F3F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+
+                        <!-- Profile dropdown -->
+                        <div class="ml-1 sm:ml-3 lg:ml-6 relative">
+                            <div>
+                                <button type="button" class="flex rounded-full focus:outline-none">
+                                    <img class="sm:h-8 sm:w-8 h-7 w-7 rounded-full"
+                                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Body Section Start -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+        <div class="flex lg:space-x-5">
+
+            <!-- Sidebar Start -->
+
+            <!-- 
+                For Show Hide siderbar nav menu in mobile view use this classes
+                for Show Menu "block lg:block"
+                for Hide Menu "hidden lg:block"                
+             -->
+            <div
+                class="hidden lg:block fixed top-16 lg:top-0 inset-x-0 z-50 lg:z-auto lg:relative bg-white h-screen lg:min-w-[14rem] lg:w-48 xl:w-56 px-4 sm:px-6 lg:px-0 overflow-y-auto overflow-x-hidden">
+                <div class="py-3 space-y-1">
+                    <div class="flex items-center space-x-2 mb-5 px-2 lg:px-0">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="profile_img">
+                        <div>
+                            <h6 class="font-medium text-base text-gray-800 capitalize">Nick
+                                Papadopoulos
+                            </h6>
+                            <p class="text-sm font-medium text-gray-700">@nick_papad</p>
+                        </div>
+                    </div>
+                    <hr class="border-gray-200 mx-2 lg:mx-0">
+                    <ul class="space-y-3 md:space-y-5 text-base lg:-mx-2 pt-6">
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                                <span class="text-gray-700">
+                                    <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 6.253C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253m0-13v13-13zm0 0C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253v-13z"
+                                            stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Οι ιστορίες μου</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                                <span class="text-gray-700">
+                                    <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                                            stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Οι ενότητες μου</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                                <span class="text-gray-700">
+                                    <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 1112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                                            stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Ακόλουθοι</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                                <span class="text-gray-700">
+                                    <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                                            stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Μηνύματα</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                                <span class="text-gray-700">
+                                    <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                                            stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Εμβλήματα</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                                <span class="text-gray-700">
+                                    <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke="#4A5568"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Αγαπημένα</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                                <span class="text-gray-700">
+                                    <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 17H9m6 0h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.001 6.001 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h11zm0 0v1a3 3 0 01-6 0v-1h6z"
+                                            stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Ειδοποιήσεις</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                                <span class="text-gray-700">
+                                    <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.723 1.723 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                                            stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0v0z" stroke="#4A5568" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span>Ρυθμίσεις</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Sidebar End -->
+
+            <!-- Content Section Start -->
+            <div class="w-full pb-24">
+
+                <div class="px-8 pt-5 border-b border-gray-200 mb-9">
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-teal-900">Οι Ιστορίες μου</h3>
+                            <p class="text-base text-gray-700">Δημιούργησε νέες ιστορίες, όρισε την ορατότητα,
+                                προσκάλεσε writers</p>
+                        </div>
+
+                        <div>
+                            <svg width="169" height="108" viewBox="0 0 169 108" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M3.853 7.55A3.708 3.708 0 01.215 3.115 3.712 3.712 0 015.273.409a3.71 3.71 0 011.202 6.053A3.713 3.713 0 013.853 7.55zm0-6.804A3.09 3.09 0 00.82 4.442a3.094 3.094 0 004.215 2.254 3.092 3.092 0 001.002-5.043A3.094 3.094 0 003.853.746zM168.878 103.834h-6.102v-6.106h6.102v6.106zm-5.633-.469h5.164v-5.167h-5.164v5.167zM23.474 98.292l-4.162-4.466 4.462-4.164 4.163 4.465-4.463 4.165zm-3.499-4.442l3.522 3.778 3.777-3.524-3.523-3.778-3.776 3.524z"
+                                        fill="#3F3D56" />
+                                    <path opacity=".3"
+                                        d="M95.111 106.592c23.732 0 42.97-19.25 42.97-42.994 0-23.745-19.238-42.994-42.97-42.994s-42.97 19.25-42.97 42.994c0 23.745 19.238 42.994 42.97 42.994z"
+                                        fill="#2C7A7B" />
+                                    <path d="M77.464 8.902l-28.61 34.733 42.343 50 28.229-33.206L77.464 8.902z"
+                                        fill="#2C7A7B" />
+                                    <path opacity=".1"
+                                        d="M77.464 8.902l-28.61 34.733 42.343 50 28.229-33.206L77.464 8.902z"
+                                        fill="#000" />
+                                    <path
+                                        d="M49.998 44.017a14.387 14.387 0 012.333-3.117l26.277-26.655s9.156-1.526 11.063 3.054l-33.57 27.48-6.103-.762z"
+                                        fill="#F2F2F2" />
+                                    <path
+                                        d="M48.663 43.444l38.91 59.543s3.815 2.672 7.63 1.145l39.864-26.909L92.723 13.1 54.576 42.871l-5.913.573z"
+                                        fill="#2C7A7B" />
+                                    <path
+                                        d="M87.966 22.392L63.55 39.947l.36.502 24.417-17.554-.361-.503zM63.226 46.518l-.515.34 32.043 48.475.516-.341-32.044-48.474zM124.581 77.352L98.647 96.444l.366.498 25.934-19.092-.366-.498zM92.595 23.23l-.507.352 33.188 47.71.507-.353-33.188-47.71zM82.344 13.867L52.158 41.586l.258.281 30.186-27.719-.258-.281zM84.858 14.104L53.31 41.971l.253.286L85.11 14.391l-.253-.287zM86.832 14.66l-32.75 27.313.245.294 32.75-27.314-.245-.293z"
+                                        fill="#3F3D56" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <path fill="#fff" d="M0 0h168.881v140H0z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box Section Start -->
+                <div class="border border-dashed border-gray-400 px-6 pt-24 pb-20 mb-16">
+                    <div class="text-center">
+                        <div class="flex justify-center mb-2">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32 16.675c3.115-2.07 7.344-3.342 12-3.342 4.659 0 8.885 1.272 12 3.342V51.34C52.885 49.271 48.659 48 44 48c-4.656 0-8.885 1.272-12 3.341m0-34.666V51.34 16.675zm0 0c-3.115-2.07-7.344-3.342-12-3.342s-8.885 1.272-12 3.342V51.34C11.115 49.271 15.344 48 20 48s8.885 1.272 12 3.341V16.675z"
+                                    stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h5 class="text-base md:text-lg font-medium text-gray-600 mb-3">Ξεκίνα δυναμικά με τη
+                            δική σου ιστορία</h5>
+                        <a href="#" class="text-sm font-medium text-blue-500 flex justify-center items-stretch">
+                            Δημιουργία ιστορίας
+                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.75149 17.6483C8.52653 17.4233 8.40015 17.1181 8.40015 16.7999C8.40015 16.4817 8.52653 16.1765 8.75149 15.9515L12.7031 11.9999L8.75149 8.0483C8.5329 7.82198 8.41195 7.51886 8.41468 7.20422C8.41742 6.88959 8.54362 6.58861 8.76611 6.36612C8.9886 6.14363 9.28957 6.01743 9.60421 6.01469C9.91885 6.01196 10.222 6.13291 10.4483 6.3515L15.2483 11.1515C15.4733 11.3765 15.5996 11.6817 15.5996 11.9999C15.5996 12.3181 15.4733 12.6233 15.2483 12.8483L10.4483 17.6483C10.2233 17.8733 9.91809 17.9996 9.59989 17.9996C9.28169 17.9996 8.97652 17.8733 8.75149 17.6483Z"
+                                        fill="#3B82F6" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Box Section End -->
+
+                <!-- Post Start -->
+                <div class="mb-16">
+                    <h5 class="text-lg font-medium text-gray-700 mb-6">Συνέχισε να γράφεις</h5>
+                    <!-- 1st Card -->
+                    <div class="bg-white shadow-md rounded-l mb-2">
+                        <div class="flex sm:flex-row flex-col">
+                            <img src="./assets/images/img1.jpg" alt=""
+                                class="w-full sm:w-[180px] sm:min-w-[180px] h-40 sm:h-[208px] object-cover object-center rounded-l">
+
+                            <div class="w-full px-5 pt-4 pb-3">
+                                <div class="flex flex-wrap justify-between items-center">
+                                    <h1 class="text-base md:text-lg lg:text-xl text-gray-700 font-medium my-2 mr-6">
+                                        Τρόμος στο θέατρο
+                                    </h1>
+                                    <button
+                                        class="my-2 px-2 py-1.5 rounded-full text-xs font-medium text-green-800 bg-green-200 focus:outline-none">Δημοσιευμένο</button>
+                                </div>
+                                <p class="text-xs text-gray-600 mb-4 max-w-lg">Όταν μία ντίβα του Hollywood
+                                    αποφασίζει να παιξει στο θέατρο Cortez, ένας μανιακός δολοφονος εμφανίζεται. Τι
+                                    σημαίνει αυτό;
+                                </p>
+
+                                <ul class="flex flex-wrap space-x-2 mb-6">
+                                    <li class="flex items-center space-x-1">
+                                        <span class="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0v0z" stroke="#4B5563"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                                    stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs text-gray-600">40.2K</span>
+                                    </li>
+                                    <li class="flex items-center space-x-1">
+                                        <span class="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.05 2.927c.3-.92 1.602-.92 1.901 0l1.52 4.674a1 1 0 00.95.69h4.914c.97 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0L7.436 19.9c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81H8.58a1 1 0 00.951-.69l1.52-4.674v0z"
+                                                    stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs text-gray-600">84K</span>
+                                    </li>
+                                </ul>
+                                <div class="flex items-end justify-between">
+                                    <button
+                                        class="bg-white py-1 px-2 border border-gray-400 flex items-center space-x-2 text-sm sm:text-base font-medium text-gray-700 focus:outline-none">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zm-2.207 2.207L3 14.172V17h2.828l8.38-8.379-2.83-2.828h.001z"
+                                                    fill="#4B5563" />
+                                            </svg>
+                                        </span>
+                                        <span>Επεξεργασία</span>
+                                    </button>
+
+                                    <button class="focus:outline-none">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zM12.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zM19.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414z"
+                                                stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Card -->
+                    <div class="bg-white shadow-md rounded-l">
+                        <div class="flex sm:flex-row flex-col">
+                            <img src="./assets/images/img3.jpg" alt=""
+                                class="w-full sm:w-[180px] sm:min-w-[180px] h-40 sm:h-[208px] object-cover object-center rounded-l">
+
+                            <div class="w-full px-5 pt-4 pb-3">
+                                <div class="flex flex-wrap justify-between items-center">
+                                    <h1 class="text-base md:text-lg lg:text-xl text-gray-700 font-medium my-2 mr-6">
+                                        Νέα πραγματικότητα
+                                    </h1>
+                                    <button
+                                        class="my-2 px-2 py-1.5 rounded-full text-xs font-medium text-green-800 bg-green-200 focus:outline-none">Δημοσιευμένο</button>
+                                </div>
+                                <p class="text-xs text-gray-600 mb-4 max-w-lg">Όταν μία ντίβα του Hollywood
+                                    αποφασίζει να παιξει στο θέατρο Cortez, ένας μανιακός δολοφονος εμφανίζεται. Τι
+                                    σημαίνει αυτό;
+                                </p>
+
+                                <ul class="flex flex-wrap space-x-2 mb-6">
+                                    <li class="flex items-center space-x-1">
+                                        <span class="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0v0z" stroke="#4B5563"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                                    stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs text-gray-600">40.2K</span>
+                                    </li>
+                                    <li class="flex items-center space-x-1">
+                                        <span class="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.05 2.927c.3-.92 1.602-.92 1.901 0l1.52 4.674a1 1 0 00.95.69h4.914c.97 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0L7.436 19.9c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81H8.58a1 1 0 00.951-.69l1.52-4.674v0z"
+                                                    stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs text-gray-600">84K</span>
+                                    </li>
+                                </ul>
+                                <div class="flex items-end justify-between">
+                                    <button
+                                        class="bg-white py-1 px-2 border border-gray-400 flex items-center space-x-2 text-sm sm:text-base font-medium text-gray-700 focus:outline-none">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zm-2.207 2.207L3 14.172V17h2.828l8.38-8.379-2.83-2.828h.001z"
+                                                    fill="#4B5563" />
+                                            </svg>
+                                        </span>
+                                        <span>Επεξεργασία</span>
+                                    </button>
+
+                                    <button class="focus:outline-none">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zM12.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zM19.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414z"
+                                                stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 3rd Card -->
+                    <h5 class="text-lg font-medium text-gray-700 mt-10 mb-6">Σε εξέλιξη</h5>
+                    <div class="bg-white shadow-md rounded-l mb-2">
+                        <div class="flex sm:flex-row flex-col">
+                            <img src="./assets/images/img1.jpg" alt=""
+                                class="w-full sm:w-[180px] sm:min-w-[180px] h-40 sm:h-[208px] object-cover object-center rounded-l">
+
+                            <div class="w-full px-5 pt-4 pb-3">
+                                <div class="flex flex-wrap justify-between items-center">
+                                    <h1 class="text-base md:text-lg lg:text-xl text-gray-700 font-medium my-2 mr-6">
+                                        Brian Johnson: Η jazz μέσα μου
+                                    </h1>
+                                    <button
+                                        class="my-2 px-2 py-1.5 rounded-full text-xs font-medium text-green-800 bg-orange-300 focus:outline-none">Σε
+                                        εξέλιξη</button>
+                                </div>
+                                <p class="text-xs text-gray-600 mb-4 max-w-lg">Όταν μία ντίβα του Hollywood
+                                    αποφασίζει να παιξει στο θέατρο Cortez, ένας μανιακός δολοφονος εμφανίζεται. Τι
+                                    σημαίνει αυτό;
+                                </p>
+
+                                <ul class="flex flex-wrap space-x-2 mb-6">
+                                    <li class="flex items-center space-x-1">
+                                        <span class="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0v0z" stroke="#4B5563"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                                    stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs text-gray-600">40.2K</span>
+                                    </li>
+                                    <li class="flex items-center space-x-1">
+                                        <span class="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.05 2.927c.3-.92 1.602-.92 1.901 0l1.52 4.674a1 1 0 00.95.69h4.914c.97 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0L7.436 19.9c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81H8.58a1 1 0 00.951-.69l1.52-4.674v0z"
+                                                    stroke="#4B5563" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs text-gray-600">84K</span>
+                                    </li>
+                                </ul>
+                                <div class="flex items-end justify-between">
+                                    <button
+                                        class="bg-white py-1 px-2 border border-gray-400 flex items-center space-x-2 text-sm sm:text-base font-medium text-gray-700 focus:outline-none">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zm-2.207 2.207L3 14.172V17h2.828l8.38-8.379-2.83-2.828h.001z"
+                                                    fill="#4B5563" />
+                                            </svg>
+                                        </span>
+                                        <span>Επεξεργασία</span>
+                                    </button>
+
+                                    <button class="focus:outline-none">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zM12.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zM19.707 12.707a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414z"
+                                                stroke="#4A5568" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post End -->
+            </div>
+            <!-- Content Section End -->
+        </div>
+    </main>
+    <!-- Body Section End -->
+
+</body>
+
+</html>
