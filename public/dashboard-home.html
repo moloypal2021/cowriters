@@ -20,7 +20,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="relative flex items-center justify-between h-16">
                     <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
-                        <!-- Mobile menu button-->
+                        <!-- Mobile menu Open button-->
                         <button type="button"
                             class="inline-flex items-center justify-center p-2 rounded-md text-gray-100 focus:outline-none"
                             aria-controls="mobile-menu" aria-expanded="false">
@@ -30,6 +30,21 @@
                                     d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </button>
+                        <!-- Mobile menu Close button-->
+                        <button type="button"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-100 focus:outline-none hidden"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <svg width="20" height="20" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.3499 11L20.5166 3.84998C20.8304 3.53614 21.0067 3.11049 21.0067 2.66665C21.0067 2.22281 20.8304 1.79716 20.5166 1.48332C20.2027 1.16948 19.7771 0.993164 19.3332 0.993164C18.8894 0.993164 18.4637 1.16948 18.1499 1.48332L10.9999 8.64998L3.8499 1.48332C3.53606 1.16948 3.1104 0.993164 2.66657 0.993164C2.22273 0.993164 1.79707 1.16948 1.48323 1.48332C1.16939 1.79716 0.993079 2.22281 0.993079 2.66665C0.993079 3.11049 1.16939 3.53614 1.48323 3.84998L8.6499 11L1.48323 18.15C1.32702 18.3049 1.20303 18.4893 1.11841 18.6924C1.0338 18.8955 0.990234 19.1133 0.990234 19.3333C0.990234 19.5533 1.0338 19.7712 1.11841 19.9743C1.20303 20.1774 1.32702 20.3617 1.48323 20.5166C1.63817 20.6729 1.8225 20.7969 2.0256 20.8815C2.2287 20.9661 2.44655 21.0096 2.66657 21.0096C2.88658 21.0096 3.10443 20.9661 3.30753 20.8815C3.51063 20.7969 3.69496 20.6729 3.8499 20.5166L10.9999 13.35L18.1499 20.5166C18.3048 20.6729 18.4892 20.7969 18.6923 20.8815C18.8954 20.9661 19.1132 21.0096 19.3332 21.0096C19.5533 21.0096 19.7711 20.9661 19.9742 20.8815C20.1773 20.7969 20.3616 20.6729 20.5166 20.5166C20.6728 20.3617 20.7968 20.1774 20.8814 19.9743C20.966 19.7712 21.0096 19.5533 21.0096 19.3333C21.0096 19.1133 20.966 18.8955 20.8814 18.6924C20.7968 18.4893 20.6728 18.3049 20.5166 18.15L13.3499 11Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </button>
+
+
                         <div class="hidden sm:block lg:hidden sm:ml-6 lg:ml-8">
                             <div class="flex space-x-4">
                                 <a href="#"
@@ -92,16 +107,13 @@
     <!-- Body Section Start -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
         <div class="flex lg:space-x-5">
-
-            <!-- Sidebar Start -->
-
             <!-- 
                 For Show Hide siderbar nav menu in mobile view use this classes
                 for Show Menu "block lg:block"
                 for Hide Menu "hidden lg:block"                
              -->
             <div
-                class="hidden lg:block fixed top-16 lg:top-0 inset-x-0 z-50 lg:z-auto lg:relative bg-white h-screen lg:min-w-[14rem] lg:w-48 xl:w-56 px-4 sm:px-6 lg:px-0 overflow-y-auto overflow-x-hidden">
+                class="block lg:block fixed top-16 lg:top-0 inset-x-0 z-50 lg:z-auto lg:relative bg-white h-screen lg:min-w-[14rem] lg:w-48 xl:w-56 px-4 sm:px-6 lg:px-0 overflow-y-auto overflow-x-hidden">
                 <div class="py-3 space-y-1">
                     <div class="flex items-center space-x-2 mb-5 px-2 lg:px-0">
                         <img class="w-10 h-10 rounded-full"
@@ -117,7 +129,7 @@
                     <hr class="border-gray-200 mx-2 lg:mx-0">
                     <ul class="space-y-3 md:space-y-5 text-base lg:-mx-2 pt-6">
                         <li>
-                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-bold">
                                 <span class="text-gray-700">
                                     <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -130,7 +142,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                            <a href="#"
+                                class="flex items-center space-x-3 text-gray-700 p-2 font-medium hover:font-bold">
                                 <span class="text-gray-700">
                                     <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -143,7 +156,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                            <a href="#"
+                                class="flex items-center space-x-3 text-gray-700 p-2 font-medium hover:font-bold">
                                 <span class="text-gray-700">
                                     <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -156,7 +170,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                            <a href="#"
+                                class="flex items-center space-x-3 text-gray-700 p-2 font-medium hover:font-bold">
                                 <span class="text-gray-700">
                                     <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -169,7 +184,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                            <a href="#"
+                                class="flex items-center space-x-3 text-gray-700 p-2 font-medium hover:font-bold">
                                 <span class="text-gray-700">
                                     <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -182,7 +198,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                            <a href="#"
+                                class="flex items-center space-x-3 text-gray-700 p-2 font-medium hover:font-bold">
                                 <span class="text-gray-700">
                                     <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke="#4A5568"
@@ -193,7 +210,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                            <a href="#"
+                                class="flex items-center space-x-3 text-gray-700 p-2 font-medium hover:font-bold">
                                 <span class="text-gray-700">
                                     <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -206,7 +224,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center space-x-3 text-gray-700 p-2 font-medium">
+                            <a href="#"
+                                class="flex items-center space-x-3 text-gray-700 p-2 font-medium hover:font-bold">
                                 <span class="text-gray-700">
                                     <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -385,8 +404,10 @@
 
 
                     <!-- Profile Sidebar start -->
-                    <div class="bg-white p-3 w-full xl:w-56 border-b pb-16">
-                        <div class="flex items-center space-x-3 text-gray-700 font-medium mb-7">
+                    <div
+                        class="bg-white p-3 w-full xl:w-56 border-b pb-16 flex md:flex-col flex-row flex-wrap justify-between md:justify-start">
+
+                        <div class="flex items-center space-x-3 text-gray-700 font-medium md:mb-7 mr-5">
                             <span class="text-gray-700">
                                 <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -399,77 +420,99 @@
                             </a>
                         </div>
 
-                        <ul
-                            class="flex flex-col md:flex-row xl:flex-col space-y-3 md:space-y-0 md:space-x-3 xl:space-x-0 xl:space-y-3">
-                            <li class="">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-10 h-10 rounded-full">
-                                        <img src="./assets/images/verifier-icon.png" alt=""
-                                            class="w-10 h-10 rounded-full">
-                                    </div>
-                                    <p class="text-xs font-medium text-gray-800">Πιστοποιημένος</p>
+                        <ul class="flex flex-row xl:flex-col space-x-5 md:space-x-3 xl:space-x-0 xl:space-y-3">
+                            <li
+                                class="group cursor-pointer md:cursor-auto flex justify-center md:justify-start items-center relative">
+                                <div class="w-10 h-10 rounded-full mt-2 md:mt-0">
+                                    <img src="./assets/images/verifier-icon.png" alt="" class="w-10 h-10 rounded-full">
                                 </div>
-                            </li>
-                            <li class="">
-                                <div class="flex items-center space-x-3">
-                                    <div
-                                        class="w-10 h-10 rounded-full bg-gray-100 shadow flex justify-center items-center">
-                                        <svg width="18" height="29" viewBox="0 0 18 29" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M8.238 22.459a1.384 1.384 0 01-.826-.535 1.344 1.344 0 01.199-1.806 1.395 1.395 0 011.846 0 1.344 1.344 0 01.199 1.806 1.384 1.384 0 01-.826.535v4.791h-.592v-4.791zM11.1 24.14c-.987 1.07-1.678 3.109-1.678 3.109H7.646s-.909-2.04-1.777-3.109c-.58-.712-2.369-2.137-2.369-2.137l1.283-3.754h7.403l1.283 3.754s-1.382 1.069-2.369 2.137z"
-                                                fill="#2C7A7B" />
-                                            <path
-                                                d="M8.562 16.643c1.443 0 2.613-1.151 2.613-2.572 0-1.42-1.17-2.571-2.613-2.571S5.95 12.651 5.95 14.071c0 1.42 1.17 2.572 2.613 2.572z"
-                                                fill="#2C7A7B" />
-                                            <path
-                                                d="M7.959 1.405a.438.438 0 01.832 0l.468 1.44a.437.437 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.437.437 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.438.438 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.438.438 0 00.416-.302l.468-1.44z"
-                                                fill="#285E61" />
-                                        </svg>
-                                    </div>
-                                    <p class="text-xs font-medium text-gray-800">Bronze CoWriter</p>
+                                <div
+                                    class="opacity-0 md:opacity-100 bg-gray-200 md:bg-transparent text-xs font-medium text-gray-800 rounded-lg py-2 md:py-0 absolute md:static z-10 bottom-full group-hover:opacity-100 px-3 whitespace-nowrap">
+                                    Πιστοποιημένος
+                                    <svg class="md:hidden absolute text-gray-200 h-2 w-full left-0 top-full" x="0px"
+                                        y="0px" viewBox="0 0 255 255" xml:space="preserve">
+                                        <polygon class="fill-current" points="0,0 127.5,127.5 255,0" />
+                                    </svg>
                                 </div>
                             </li>
 
-                            <li class="">
-                                <div class="flex items-center space-x-3">
-                                    <div
-                                        class="w-10 h-10 rounded-full bg-gray-100 shadow flex justify-center items-center">
-                                        <svg width="20" height="29" viewBox="0 0 20 29" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M9.238 22.459a1.384 1.384 0 01-.826-.535 1.344 1.344 0 01.199-1.806 1.395 1.395 0 011.846 0 1.344 1.344 0 01.199 1.806 1.384 1.384 0 01-.826.535v4.791h-.592v-4.791zM12.1 24.14c-.987 1.07-1.678 3.109-1.678 3.109H8.646s-.909-2.04-1.777-3.109c-.58-.712-2.369-2.137-2.369-2.137l1.283-3.754h7.403l1.283 3.754s-1.382 1.069-2.369 2.137z"
-                                                fill="#2C7A7B" />
-                                            <path
-                                                d="M9.562 16.643c1.443 0 2.613-1.151 2.613-2.572 0-1.42-1.17-2.571-2.613-2.571S6.95 12.651 6.95 14.071c0 1.42 1.17 2.572 2.613 2.572z"
-                                                fill="#2C7A7B" />
-                                            <path
-                                                d="M14.459 1.405a.438.438 0 01.832 0l.468 1.44a.438.438 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.437.437 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.437.437 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.437.437 0 00.416-.302l.468-1.44zM3.959 1.405a.438.438 0 01.832 0l.468 1.44a.437.437 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.438.438 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.438.438 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.438.438 0 00.416-.302l.468-1.44z"
-                                                fill="#285E61" />
-                                        </svg>
-                                    </div>
-                                    <p class="text-xs font-medium text-gray-800">Silver CoWriter</p>
+                            <li
+                                class="group cursor-pointer md:cursor-auto flex justify-center md:justify-start items-center relative">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-gray-100 shadow flex justify-center items-center  mt-2 md:mt-0">
+                                    <svg width="18" height="29" viewBox="0 0 18 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.238 22.459a1.384 1.384 0 01-.826-.535 1.344 1.344 0 01.199-1.806 1.395 1.395 0 011.846 0 1.344 1.344 0 01.199 1.806 1.384 1.384 0 01-.826.535v4.791h-.592v-4.791zM11.1 24.14c-.987 1.07-1.678 3.109-1.678 3.109H7.646s-.909-2.04-1.777-3.109c-.58-.712-2.369-2.137-2.369-2.137l1.283-3.754h7.403l1.283 3.754s-1.382 1.069-2.369 2.137z"
+                                            fill="#2C7A7B" />
+                                        <path
+                                            d="M8.562 16.643c1.443 0 2.613-1.151 2.613-2.572 0-1.42-1.17-2.571-2.613-2.571S5.95 12.651 5.95 14.071c0 1.42 1.17 2.572 2.613 2.572z"
+                                            fill="#2C7A7B" />
+                                        <path
+                                            d="M7.959 1.405a.438.438 0 01.832 0l.468 1.44a.437.437 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.437.437 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.438.438 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.438.438 0 00.416-.302l.468-1.44z"
+                                            fill="#285E61" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="opacity-0 md:opacity-100 bg-gray-200 md:bg-transparent text-xs font-medium text-gray-800 rounded-lg py-2 md:py-0 absolute md:static z-10 bottom-full group-hover:opacity-100 px-3 whitespace-nowrap">
+                                    Bronze CoWriter
+                                    <svg class="md:hidden absolute text-gray-200 h-2 w-full left-0 top-full" x="0px"
+                                        y="0px" viewBox="0 0 255 255" xml:space="preserve">
+                                        <polygon class="fill-current" points="0,0 127.5,127.5 255,0" />
+                                    </svg>
                                 </div>
                             </li>
 
-                            <li class="">
-                                <div class="flex items-center space-x-3">
-                                    <div
-                                        class="w-10 h-10 rounded-full bg-gray-100 shadow flex justify-center items-center">
-                                        <svg width="27" height="29" viewBox="0 0 27 29" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M12.238 22.459a1.384 1.384 0 01-.826-.535 1.344 1.344 0 01.199-1.806 1.395 1.395 0 011.846 0 1.344 1.344 0 01.199 1.806 1.384 1.384 0 01-.826.535v4.791h-.592v-4.791zM15.1 24.14c-.987 1.07-1.678 3.109-1.678 3.109h-1.776s-.909-2.04-1.777-3.109c-.58-.712-2.369-2.137-2.369-2.137l1.283-3.754h7.403l1.283 3.754s-1.382 1.069-2.369 2.137z"
-                                                fill="#2C7A7B" />
-                                            <path
-                                                d="M12.562 16.643c1.443 0 2.613-1.151 2.613-2.572 0-1.42-1.17-2.571-2.613-2.571S9.95 12.651 9.95 14.071c0 1.42 1.17 2.572 2.613 2.572z"
-                                                fill="#2C7A7B" />
-                                            <path
-                                                d="M21.459 1.405a.438.438 0 01.832 0l.468 1.44a.438.438 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.437.437 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.437.437 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.437.437 0 00.416-.302l.468-1.44zM12.709 1.405a.438.438 0 01.832 0l.468 1.44a.438.438 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.437.437 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.437.437 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.437.437 0 00.416-.302l.468-1.44zM3.959 1.405a.438.438 0 01.832 0l.468 1.44a.437.437 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.438.438 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.438.438 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.438.438 0 00.416-.302l.468-1.44z"
-                                                fill="#285E61" />
-                                        </svg>
-                                    </div>
-                                    <p class="text-xs font-medium text-gray-800">Gold CoWriter</p>
+                            <li
+                                class="group cursor-pointer md:cursor-auto flex justify-center md:justify-start items-center relative">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-gray-100 shadow flex justify-center items-center  mt-2 md:mt-0">
+                                    <svg width="20" height="29" viewBox="0 0 20 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.238 22.459a1.384 1.384 0 01-.826-.535 1.344 1.344 0 01.199-1.806 1.395 1.395 0 011.846 0 1.344 1.344 0 01.199 1.806 1.384 1.384 0 01-.826.535v4.791h-.592v-4.791zM12.1 24.14c-.987 1.07-1.678 3.109-1.678 3.109H8.646s-.909-2.04-1.777-3.109c-.58-.712-2.369-2.137-2.369-2.137l1.283-3.754h7.403l1.283 3.754s-1.382 1.069-2.369 2.137z"
+                                            fill="#2C7A7B" />
+                                        <path
+                                            d="M9.562 16.643c1.443 0 2.613-1.151 2.613-2.572 0-1.42-1.17-2.571-2.613-2.571S6.95 12.651 6.95 14.071c0 1.42 1.17 2.572 2.613 2.572z"
+                                            fill="#2C7A7B" />
+                                        <path
+                                            d="M14.459 1.405a.438.438 0 01.832 0l.468 1.44a.438.438 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.437.437 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.437.437 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.437.437 0 00.416-.302l.468-1.44zM3.959 1.405a.438.438 0 01.832 0l.468 1.44a.437.437 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.438.438 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.438.438 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.438.438 0 00.416-.302l.468-1.44z"
+                                            fill="#285E61" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="opacity-0 md:opacity-100 bg-gray-200 md:bg-transparent text-xs font-medium text-gray-800 rounded-lg py-2 md:py-0 absolute md:static z-10 bottom-full group-hover:opacity-100 px-3 whitespace-nowrap">
+                                    Silver CoWriter
+                                    <svg class="md:hidden absolute text-gray-200 h-2 w-full left-0 top-full" x="0px"
+                                        y="0px" viewBox="0 0 255 255" xml:space="preserve">
+                                        <polygon class="fill-current" points="0,0 127.5,127.5 255,0" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li
+                                class="group cursor-pointer md:cursor-auto flex justify-center md:justify-start items-center relative">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-gray-100 shadow flex justify-center items-center  mt-2 md:mt-0">
+                                    <svg width="27" height="29" viewBox="0 0 27 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.238 22.459a1.384 1.384 0 01-.826-.535 1.344 1.344 0 01.199-1.806 1.395 1.395 0 011.846 0 1.344 1.344 0 01.199 1.806 1.384 1.384 0 01-.826.535v4.791h-.592v-4.791zM15.1 24.14c-.987 1.07-1.678 3.109-1.678 3.109h-1.776s-.909-2.04-1.777-3.109c-.58-.712-2.369-2.137-2.369-2.137l1.283-3.754h7.403l1.283 3.754s-1.382 1.069-2.369 2.137z"
+                                            fill="#2C7A7B" />
+                                        <path
+                                            d="M12.562 16.643c1.443 0 2.613-1.151 2.613-2.572 0-1.42-1.17-2.571-2.613-2.571S9.95 12.651 9.95 14.071c0 1.42 1.17 2.572 2.613 2.572z"
+                                            fill="#2C7A7B" />
+                                        <path
+                                            d="M21.459 1.405a.438.438 0 01.832 0l.468 1.44a.438.438 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.437.437 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.437.437 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.437.437 0 00.416-.302l.468-1.44zM12.709 1.405a.438.438 0 01.832 0l.468 1.44a.438.438 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.437.437 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.437.437 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.437.437 0 00.416-.302l.468-1.44zM3.959 1.405a.438.438 0 01.832 0l.468 1.44a.437.437 0 00.416.303h1.514c.424 0 .6.542.258.791l-1.225.89a.438.438 0 00-.16.49l.469 1.44a.438.438 0 01-.674.489l-1.225-.89a.438.438 0 00-.514 0l-1.225.89a.438.438 0 01-.674-.49l.469-1.44a.438.438 0 00-.16-.489l-1.224-.89a.438.438 0 01.257-.791h1.514a.438.438 0 00.416-.302l.468-1.44z"
+                                            fill="#285E61" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="opacity-0 md:opacity-100 bg-gray-200 md:bg-transparent text-xs font-medium text-gray-800 rounded-lg py-2 md:py-0 absolute md:static z-10 bottom-full group-hover:opacity-100 px-3 whitespace-nowrap">
+                                    Gold CoWriter
+                                    <svg class="md:hidden absolute text-gray-200 h-2 w-full left-0 top-full" x="0px"
+                                        y="0px" viewBox="0 0 255 255" xml:space="preserve">
+                                        <polygon class="fill-current" points="0,0 127.5,127.5 255,0" />
+                                    </svg>
                                 </div>
                             </li>
                         </ul>
